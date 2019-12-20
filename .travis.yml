@@ -5,6 +5,7 @@ node_js:
   # so that your addon works for all apps
   - "8"
 
+sudo: false
 dist: trusty
 
 addons:
@@ -26,7 +27,7 @@ branches:
     - /^v\d+\.\d+\.\d+/
 
 jobs:
-  fast_finish: true
+  fail_fast: true
   allow_failures:
     - env: EMBER_TRY_SCENARIO=ember-canary
 
