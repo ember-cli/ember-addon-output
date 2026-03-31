@@ -69,7 +69,6 @@ export default [
     },
   },
   {
-    ...qunit.configs.recommended,
     files: ['tests/**/*-test.{js,gjs}'],
     plugins: {
       qunit,
@@ -79,7 +78,6 @@ export default [
    * CJS node files
    */
   {
-    ...n.configs['flat/recommended-script'],
     files: [
       '**/*.cjs',
       'config/**/*.js',
@@ -108,7 +106,6 @@ export default [
    * ESM node files
    */
   {
-    ...n.configs['flat/recommended-module'],
     files: ['**/*.mjs'],
     plugins: {
       n,
